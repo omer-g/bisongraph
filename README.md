@@ -1,6 +1,6 @@
 # Bison Graph Generator
 
-Creates a visual svg graph of a Bison LALR(1) automata.
+Creates an `svg` graph of a Bison LALR(1) automaton
 
 ### Prerequisites
 
