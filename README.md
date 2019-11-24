@@ -1,8 +1,21 @@
-# Creates a visual svg graph of a Bison LALR(1) automata.
+# Bison Graph Generator
 
-# Requirements:
-# pip install graphviz
-# pip install pydot
+Creates a visual svg graph of a Bison LALR(1) automata.
 
-# Usage: 'python bisongraph.py my_parser.ypp'
-# Output: 'my_parser.svg'
+### Prerequisites
+
+```python
+pip install graphviz
+pip install pydot
+```
+
+### Usage:
+```python
+python bisongraph.py example.ypp
+```
+
+### Output:
+```
+example.svg
+```
+
