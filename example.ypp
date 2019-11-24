@@ -1,0 +1,35 @@
+%{
+
+#include <stdio.h>
+#include <iostream>
+
+int yylex();
+void yyerror(const char*);
+
+%}
+
+%left 'a'
+%right 'b'
+
+%%
+
+P : S '\n' ;
+S : S 'a' S
+    | S 'b' S
+    | 'c'
+    | 'd'
+    | /*epsilon*/
+    ;
+%%
+
+int yylex(){
+    return getchar();
+}
+
+void yyerror(const char*){
+    std::cout << 'Error';
+}
+
+int main(){
+    return yyparse();
+}
