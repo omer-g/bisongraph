@@ -19,5 +19,4 @@ python bisongraph.py example.ypp
 example.svg
 ```
 
-![Alt text](./graph/example.svg)
 <img src="./graph/example.svg">
